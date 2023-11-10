@@ -9,9 +9,14 @@ namespace OOP_PolymorphismL7
 		}*/
 
 		public virtual double area()
-		{
+        /*In OOP, when we mark a method (in a parent 
+         * class) as virtual, we are indicating that this method can be 
+         * overridden by child classes. The virtual keyword is used for method 
+         * overriding, which is a fundamental concept in polymorphism and 
+         * inheritance.*/
+        {
 
-			return 0.0;
+            return 0.0;
 
 		}
 	}
