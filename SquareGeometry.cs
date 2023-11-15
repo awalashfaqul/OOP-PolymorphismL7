@@ -3,34 +3,26 @@ namespace OOP_PolymorphismL7
 {
     class SquareGeometry : Geometry
     {
-        // properties of square
-        public double Length { get; set; }
-        public double Width { get; set; }
-        public double AngleDegree { get; set; }
+        /*  properties of square. We do not need length and width here, because
+            the arms of the square is having same length, and that's the special
+            property of a square. And the agnle between the arms are 90 degree).
+            So here we will go with one special property: side arm.
+        */
 
-
+        public double sideArm { get; set; }
+        
 
         //constructor to create square object
-        public SquareGeometry(double length, double width, double angledegree)
+        public SquareGeometry(double sidArm)
         {
-            Length = length;
-            Width = width;
-            AngleDegree = angledegree;
+            sideArm = sidArm;
         }
 
         // method to calculate area, overriden from parent Geometry
-        public override double area()
+        public override double geometricArea()
         {
-            double angleRadian = AngleDegree * (Math.PI/180);
             double squareArea;
-
-            if (Length != Width || AngleDegree != 90)
-            { 
-                Console.WriteLine("Sorry! It is not a Square, as length and width are not same.");
-                return 0.0;
-            }
-
-            return squareArea = Length * Width * Math.Sin(angleRadian);
+            return squareArea = sideArm * sideArm;
         }
     }
 }
