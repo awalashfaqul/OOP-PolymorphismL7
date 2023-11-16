@@ -5,20 +5,21 @@ namespace OOP_PolymorphismL7
     class RectangleGeometry : Geometry
     {
         // properties of rectangle
-        public double L { get; set; }
-        public double W { get; set; }
+        public double rectLen { get; set; }
+        public double rectWid { get; set; }
 
         // constructor to construct rectangle object
-        public RectangleGeometry(double length, double width)
+        public RectangleGeometry(double lenGth, double wiDth)
         {
-            L = length;
-            W = width;
+            rectLen = lenGth;
+            rectWid = wiDth;
         }
 
         // method to calculate area, which will be overrided from parent Geometry
-        public override double area()
+        public override double geometricArea()
         {
-            return L * W;
+            double rectArea;
+            return rectArea = rectLen * rectWid;
         }
     }
 }

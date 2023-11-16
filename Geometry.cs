@@ -8,7 +8,7 @@ namespace OOP_PolymorphismL7
 		{
 		}*/
 
-		public virtual double area()
+		public virtual double geometricArea()
         /*In OOP, when we mark a method (in a parent 
          * class) as virtual, we are indicating that this method can be 
          * overridden by child classes. The virtual keyword is used for method 
