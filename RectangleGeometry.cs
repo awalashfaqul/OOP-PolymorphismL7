@@ -2,14 +2,14 @@
 
 namespace OOP_PolymorphismL7
 {
-    class RectangleGeometry : Geometry
+    class Rectangle : Geometry
     {
         // properties of rectangle
         public double rectLen { get; set; }
         public double rectWid { get; set; }
 
         // constructor to construct rectangle object
-        public RectangleGeometry(double lenGth, double wiDth)
+        public Rectangle(double lenGth, double wiDth)
         {
             rectLen = lenGth;
             rectWid = wiDth;

@@ -1,13 +1,13 @@
 ﻿using System;
 namespace OOP_PolymorphismL7
 {
-    class CircleGeometry : Geometry
+    class Circle : Geometry
     {
         // properties for circle
         public double crclRadius { get; set; }
 
         // constructor to create circle object
-        public CircleGeometry(double raDius)
+        public Circle(double raDius)
         {
             crclRadius = raDius;
         }

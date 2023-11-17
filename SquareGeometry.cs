@@ -1,7 +1,7 @@
 ﻿using System;
 namespace OOP_PolymorphismL7
 {
-    class SquareGeometry : Geometry
+    class Square : Geometry
     {
         /*  properties of square. We do not need length and width here, because
             the arms of the square is having same length, and that's the special
@@ -13,7 +13,7 @@ namespace OOP_PolymorphismL7
         
 
         //constructor to create square object
-        public SquareGeometry(double sidArm)
+        public Square(double sidArm)
         {
             sideArm = sidArm;
         }

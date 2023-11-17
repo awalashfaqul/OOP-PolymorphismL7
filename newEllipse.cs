@@ -1,7 +1,7 @@
 ﻿using System;
 namespace OOP_PolymorphismL7
 {
-	public class newEllipse: Geometry
+	public class Ellipse: Geometry
 	{
 
         // properties for ellipse
@@ -10,7 +10,7 @@ namespace OOP_PolymorphismL7
 
 
         // constructor to create ellipse object
-        public newEllipse(double semmajAxis, double semminAxis)
+        public Ellipse(double semmajAxis, double semminAxis)
         {
             semMajaxis = semmajAxis;
             semMinaxis = semminAxis;
