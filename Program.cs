@@ -8,18 +8,20 @@ class Program
     {
         Geometry[] Areas = new Geometry[5];
 
-        Areas[0] = new RectangleGeometry(4, 6);
-        Areas[1] = new SquareGeometry(5);
-        Areas[2] = new CircleGeometry(3);
-        Areas[3] = new Paralllogram(7, 4);
-        Areas[4] = new newEllipse(5, 3);
+        Areas[0] = new RectangleGeometry(2, 3);
+        Areas[1] = new SquareGeometry(2);
+        Areas[2] = new CircleGeometry(4);
+        Areas[3] = new Paralllogram(3, 4);
+        Areas[4] = new newEllipse(9, 2);
 
         foreach (Geometry Area in Areas)
-            {
-                   Console.WriteLine($"Area: {Area.geometricArea()}");
-            }
+        {
+                Console.WriteLine($"Area: {Area.geometricArea()}");
+         
+        }
 
-         Console.ReadLine();
+
+        Console.ReadLine();
     }
     
 }
